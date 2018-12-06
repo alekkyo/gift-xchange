@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Exchange extends Model
 {
     protected $guarded = [];
 
-    public function exchange()
+    public function user()
     {
-        return $this->hasMany(User::class);
+        return $this->belongsTo(Exchange::class);
     }
 }
