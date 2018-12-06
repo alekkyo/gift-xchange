@@ -9,6 +9,18 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $('.hovername').click(function() {
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+
         <!-- Styles -->
         <style>
             html, body {
@@ -71,7 +83,7 @@
                 color:red;
             }
 
-            .hovername:hover {
+            .hovername.active {
                 background-color:transparent;
                 color:black;
             }
