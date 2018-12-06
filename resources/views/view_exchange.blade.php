@@ -67,15 +67,15 @@
         }
 
         table {
-            text-align:left;
+            text-align: left;
         }
 
         table td {
-            padding:5px;
+            padding: 5px;
         }
 
         table td:last-child {
-            text-align:right;
+            text-align: center;
         }
     </style>
 </head>
@@ -89,6 +89,8 @@
             @foreach ($users as $user)
                 <tr>
                     <td>Pick link for <b>{{ $user->name }}</b>:</td>
+                </tr>
+                <tr>
                     <td>
                         <a href="{{ config('app.url') }}/exchange/{{ $code }}/link/{{ $user->link }}">
                             {{ config('app.url') }}/exchange/{{ $code }}/link/{{ $user->link }}
