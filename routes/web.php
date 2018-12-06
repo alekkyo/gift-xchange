@@ -15,7 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/', function () {
-
-    return view('welcome');
-});
+Route::post('/exchange', 'ExchangeController@newExchange');
+Route::get('/exchange/{code}', 'ExchangeController@showExchange');
