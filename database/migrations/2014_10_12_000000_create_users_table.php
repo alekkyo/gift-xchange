@@ -16,8 +16,9 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('exchange_id');
+            $table->string('link');
             $table->string('name');
-            $table->string('name_picked');
+            $table->string('name_picked')->nullable();
             $table->timestamps();
         });
     }

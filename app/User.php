@@ -10,6 +10,6 @@ class User extends Model
 
     public function exchange()
     {
-        return $this->hasMany(User::class);
+        return $this->belongsTo(Exchange::class);
     }
 }

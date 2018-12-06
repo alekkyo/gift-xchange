@@ -8,8 +8,8 @@ class Exchange extends Model
 {
     protected $guarded = [];
 
-    public function user()
+    public function users()
     {
-        return $this->belongsTo(Exchange::class);
+        return $this->hasMany(User::class);
     }
 }
