@@ -25,6 +25,7 @@ class NewExchangeRequest extends FormRequest
     {
         return [
             'code' => 'required',
+            'participants' => 'required',
         ];
     }
 }

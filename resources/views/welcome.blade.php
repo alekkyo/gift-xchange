@@ -90,7 +90,11 @@
 
                 <form action="/exchange" method="POST">
                     Please enter your gift exchange code:&nbsp;&nbsp;
-                    <input type="text" name="code"/>
+                    <input type="text" name="code" place/>
+                    <br><br>
+                    Number of participants:
+                    <input type="number" name="participants" min="0" max="20"/>
+                    <br><br>
                     <input type="submit" value="Submit"/>
                     {{ csrf_field() }}
                 </form>

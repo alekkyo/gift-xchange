@@ -76,7 +76,7 @@
 
                 <form method="POST" action="/exchange/{{ $code }}">
                     <div class="half m-b-md">
-                        @for ($i = 1; $i <= 20; $i++)
+                        @for ($i = 1; $i <= $participants; $i++)
                             Participant #{{ $i }}: <input type="text" name="{{ $i }}"><br><br>
                         @endfor
                     </div>

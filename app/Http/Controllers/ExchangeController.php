@@ -42,6 +42,7 @@ class ExchangeController extends Controller
         if (!Exchange::where('code', $request->code)->exists()) {
             Exchange::create([
                 'code' => $request->code,
+                'participants' => $request->participants
             ]);
         }
         return redirect('/exchange/' . $request->code);
@@ -63,7 +64,7 @@ class ExchangeController extends Controller
         if ($exchange->users()->exists()) {
             return view('view_exchange', ['code' => $code, 'users' => $exchange->users]);
         } else {
-            return view('new_exchange', ['code' => $code]);
+            return view('new_exchange', ['code' => $code, 'participants' => $exchange->participants]);
         }
     }
 
