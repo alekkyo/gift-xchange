@@ -64,19 +64,29 @@
             .m-b-sm {
                 margin-bottom: 10px;
             }
+
+            .hovername {
+                padding:10px;
+                background-color:red;
+                color:red;
+            }
+
+            .hovername:hover {
+                background-color:transparent;
+                color:black;
+            }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="m-t-md m-b-md">
-                    Viewing new gift exchange "{{ $code }}"
+                    Hey {{ $user->name }},<br>
+                    Viewing your pick for new gift exchange "{{ $code }}"
                 </div>
-                @foreach ($users as $user)
-                    <div class="m-b-sm">
-                        Pick link for <b>{{ $user->name }}</b>: <a href="{{ config('app.url') }}/exchange/{{ $code }}/link/{{ $user->link }}">{{ config('app.url') }}/exchange/{{ $code }}/link/{{ $user->link }}</a>
-                    </div>
-                @endforeach
+                <div>
+                    You have picked <div class="hovername">{{ $user->name_picked }}</div>.
+                </div>
             </div>
         </div>
     </body>

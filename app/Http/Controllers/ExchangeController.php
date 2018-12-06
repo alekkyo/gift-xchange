@@ -54,6 +54,7 @@ class ExchangeController extends Controller
      */
     public function showExchange($code)
     {
+        /** @var Exchange $exchange */
         $exchange = Exchange::where('code', $code)->first();
         if (empty($exchange)) {
             return view('welcome');
@@ -110,5 +111,22 @@ class ExchangeController extends Controller
         }
 
         return redirect('/exchange/' . $code);
+    }
+
+    /**
+     * View picked user
+     * @param string $code
+     * @param string $link
+     * @return \View
+     */
+    public function viewPicked($code, $link)
+    {
+        if ($exchange = Exchange::where('code', $code)->first()) {
+            $user = User::where('exchange_id', $exchange->id)->where('link', $link)->first();
+            if (!empty($user)) {
+                return view('view_pick', ['code' => $code, 'user' => $user]);
+            }
+        }
+        return view('welcome');
     }
 }

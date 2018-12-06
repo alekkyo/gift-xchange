@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da6b60c2-62e5-41df-b35f-71576f46a111" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/new_exchange.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/view_exchange.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/view_picked.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/view_pick.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exchange.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exchange.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExchangeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExchangeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/new_exchange.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/new_exchange.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/view_exchange.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view_exchange.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/view_picked.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view_picked.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,15 +26,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="env" value="1" />
+          <entry key="env" value="2" />
           <entry key="log" value="1" />
-          <entry key="php" value="20" />
+          <entry key="php" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="1" />
-          <entry key="Blade" value="7" />
+          <entry key=".env file" value="2" />
+          <entry key="Blade" value="8" />
           <entry key="Log" value="1" />
           <entry key="PHP" value="13" />
         </counts>
@@ -44,28 +42,46 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="55" />
-          <entry key="php" value="3340" />
+          <entry key="php" value="4436" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="55" />
-          <entry key="Blade" value="663" />
-          <entry key="PHP" value="2677" />
+          <entry key="Blade" value="1295" />
+          <entry key="PHP" value="3141" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ExchangeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="78" column="60" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
+            <state relative-caret-position="277">
+              <caret line="126" column="38" selection-start-line="126" selection-start-column="38" selection-end-line="126" selection-end-column="38" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/view_pick.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -82,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="71" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="71" />
+            <state relative-caret-position="340">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -94,22 +110,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/view_exchange.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-953">
-              <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+            <state relative-caret-position="326">
+              <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/view_picked.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="78" column="27" lean-forward="true" selection-end-line="83" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/new_exchange.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+            <state relative-caret-position="134">
+              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="74" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -134,16 +154,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_06_040937_create_exchanges_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/NewExchangeRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Exchange.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/new_exchange.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/view_picked.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/view_exchange.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ExchangeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/view_pick.blade.php" />
       </list>
     </option>
   </component>
@@ -232,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="create_user&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/database/migrations/2014_10_12_000000_create_users_table.php&#10;user&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/app/User.php&#10;web&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/routes/web.php&#10;create_&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/database/migrations/2014_10_12_000000_create_users_table.php&#10;laravel.lo&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/storage/logs/laravel-2018-12-06.log&#10;showexc&#9;null&#9;null&#10;excha&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/app/Exchange.php&#10;newex&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/routes/web.php&#10;welcome&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/resources/views/welcome.blade.php&#10;create_exc&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/database/migrations/2018_12_06_040937_create_exchanges_table.php&#10;create_u&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/database/migrations/2014_10_12_000000_create_users_table.php&#10;.env&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/.env" />
+    <property name="SearchEverywhereHistoryKey" value=".env&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/.env&#10;create_user&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/database/migrations/2014_10_12_000000_create_users_table.php&#10;user&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/app/User.php&#10;web&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/routes/web.php&#10;create_&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/database/migrations/2014_10_12_000000_create_users_table.php&#10;laravel.lo&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/storage/logs/laravel-2018-12-06.log&#10;showexc&#9;null&#9;null&#10;excha&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/app/Exchange.php&#10;newex&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/routes/web.php&#10;welcome&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/resources/views/welcome.blade.php&#10;create_exc&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/database/migrations/2018_12_06_040937_create_exchanges_table.php&#10;create_u&#9;FILE&#9;file:///Users/alexkua/Sites/gift-xchange/database/migrations/2014_10_12_000000_create_users_table.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -267,24 +290,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544069091520</updated>
-      <workItem from="1544069092686" duration="5104000" />
+      <workItem from="1544069092686" duration="7036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5104000" />
+    <option name="totallyTimeSpent" value="7036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32923833" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -306,13 +329,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -373,16 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="71" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="71" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -390,30 +396,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/view_exchange.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/new_exchange.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-953">
-          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        <state relative-caret-position="134">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="74" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/view_picked.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/new_exchange.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+        <state relative-caret-position="308">
+          <caret line="78" column="27" lean-forward="true" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/view_exchange.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ExchangeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="78" column="60" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
+        <state relative-caret-position="277">
+          <caret line="126" column="38" selection-start-line="126" selection-start-column="38" selection-end-line="126" selection-end-column="38" />
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/view_pick.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::post('/exchange', 'ExchangeController@newExchange');
 Route::get('/exchange/{code}', 'ExchangeController@showExchange');
 Route::post('/exchange/{code}', 'ExchangeController@createExchangeUsers');
+Route::get('/exchange/{code}/link/{link}', 'ExchangeController@viewPicked');
