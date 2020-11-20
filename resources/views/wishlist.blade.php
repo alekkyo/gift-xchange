@@ -78,31 +78,48 @@
         table td:last-child {
             text-align: center;
         }
+        
+        .add-wish {
+          text-align:center;
+          margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 <div class="">
     <div class="content">
         <div class="m-t-md m-b-md">
-            Viewing new gift exchange "{{ $code }}"
+            Viewing {{ $user->name }}'s WishList
         </div>
         <table>
-            @foreach ($users as $user)
+            @foreach ($wishes as $index => $wish)
                 <tr>
-                    <td>Pick link for <b>{{ $user->name }}</b>:</td>
-                    {{--<td>
-                        <a href="{{ config('app.url') }}/exchange/{{ $code }}/link/{{ $user->link }}">
-                            {{ config('app.url') }}/exchange/{{ $code }}/link/{{ $user->link }}
-                        </a>
-                    </td>--}}
+                    <td>Wish #{{ $index+1 }}: </td>
                     <td>
-                      <a href="{{ config('app.url') }}/exchange/{{ $code }}/wishlist/{{ $user->id }}">
-                            {{ $user->name }}'s WishList
-                        </a>
+                        {{ $wish->name }}
                     </td>
+                    <td>
+                    <form method="POST" action="{{ config('app.url') }}/exchange/{{ $code }}/wishlist/{{ $user->id }}/delete-wish/{{ $wish->id }}">
+                      @csrf
+                      <input type="submit" value="Remove wish"/>
+                    </form>
                 </tr>
             @endforeach
+            @if (count($wishes) === 0)
+              <tr><td>
+                {{ $user->name }} has no wishes yet :(
+                </td></tr>
+            @endif
         </table>
+        <form method="POST" class="add-wish" action="{{ config('app.url') }}/exchange/{{ $code }}/wishlist/{{ $user->id }}">
+          @csrf
+          Add a wish here: <input type="text" name="wish"/> <input type="submit" value="Submit"/>
+        </form>
+        <div style="margin-top:20px;">
+          <a href="{{ config('app.url') }}/exchange/{{ $code }}">
+            Go back to exchange
+          </a>
+        </div>
     </div>
 </div>
 </body>

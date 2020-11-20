@@ -85,12 +85,15 @@
                 </div>
 
                 <div class="links m-b-md">
-                    Made by <a href="https://www.alexkua.com">Alex Kua</a>
+                    Made by <a href="https://www.alexkua.com">Alex Kua</a> <a href="mailto:alexkua@me.com">alexkua@me.com</a>
                 </div>
 
                 <form action="/exchange" method="POST">
                     Please enter your gift exchange code:&nbsp;&nbsp;
                     <input type="text" name="code" place/>
+                    <br><br>
+                    Password to view picks (optional):
+                    <input type="text" name="password" min="0" max="20"/>
                     <br><br>
                     Number of participants:
                     <input type="number" name="participants" min="0" max="20"/>
