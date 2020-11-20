@@ -90,11 +90,11 @@
             @foreach ($users as $user)
                 <tr>
                     <td>Pick link for <b>{{ $user->name }}</b>:</td>
-                    {{--<td>
+                    <td>
                         <a href="{{ config('app.url') }}/exchange/{{ $code }}/link/{{ $user->link }}">
                             {{ config('app.url') }}/exchange/{{ $code }}/link/{{ $user->link }}
                         </a>
-                    </td>--}}
+                    </td>
                     <td>
                       <a href="{{ config('app.url') }}/exchange/{{ $code }}/wishlist/{{ $user->id }}">
                             {{ $user->name }}'s WishList
